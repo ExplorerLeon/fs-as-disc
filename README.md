@@ -15,5 +15,12 @@ bq --location=europe-west2 mk \
 assetinsure-surety-data-models:asset_secure_test_dataset
 ```
 
+## Create Data transfer
+Can't specify the schedule - it is standard 24 hours. Edit in console.
+
+```
+bq mk --transfer_config --project_id=assetinsure-surety-data-models --data_source=google_cloud_storage --display_name=test_cs_bq_sample_data --target_dataset=asset_secure_test_dataset  --params='{"destination_table_name_template":"test_sample_1", "data_path_template": "gs://fs-assetsecure-testing/test_bg_df_sample_delta_data.parquet", "write_disposition": "APPEND", "file_format": "PARQUET" }'
+```
+
 ### Cloud Storage Bucket sample data URI
 gs://fs-assetsecure-testing/test_bg_df_sample_data.parquet
