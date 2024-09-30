@@ -1,0 +1,12 @@
+# The main pipeline for python_asset_bundles_test
+resources:
+  pipelines:
+    python_asset_bundles_test_pipeline:
+      name: python_asset_bundles_test_pipeline
+      target: python_asset_bundles_test_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+
+      configuration:
+        bundle.sourcePath: /Workspace/${workspace.file_path}/src

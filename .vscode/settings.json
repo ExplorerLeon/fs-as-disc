@@ -1,0 +1,9 @@
+{
+    "yaml.schemas": {
+        "file:///Users/leonsmith/explore/fs/assetinsure/asset_secure/fs-as-disc/test_bundles_databricks/bundle_config_schema.json": [],
+        "https://json.schemastore.org/databricks-asset-bundles.json": [
+            "file:///Users/leonsmith/explore/fs/assetinsure/asset_secure/fs-as-disc/test_bundles_databricks/databricks.yml",
+            "file:///Users/leonsmith/explore/fs/assetinsure/asset_secure/fs-as-disc/test_bundles_databricks/resources/test_bundles_databricks_job.yml"
+        ]
+    }
+}
