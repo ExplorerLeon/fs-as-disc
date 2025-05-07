@@ -14,20 +14,15 @@
         "**/__pycache__": true,
         ".pytest_cache": true,
     },
-    "python.envFile": "${workspaceRoot}/.env",
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
     "sqltools.connections": [
         {
             "connectionMethod": "VS Code Extension (beta)",
-            "catalog": "hive_metastore",
+            "catalog": "dbr2_aes_dev_adap",
             "previewLimit": 50,
             "driver": "Databricks",
             "name": "databricks",
-            "path": "/sql/1.0/warehouses/4b4819c8f78c1c62"
+            "path": "/sql/1.0/warehouses/d69015951d712c6c"
         }
     ],
     "sqltools.autoConnectTo": "",
-    "[jinja-sql]": {
-        "editor.defaultFormatter": "innoverio.vscode-dbt-power-user"
-    }
 }
